@@ -34,8 +34,22 @@ class RPS
         'scissors': ['paper']
     }
   end
+# adding singelton pattern methods
+  # def self.create(guess:)
+  #   if @instance {
+  #     return @instance
+  #   }
+  #   @instance = RPS.new(guess:)
+  #   return @instance
+  # end
+
+  # def self.instance
+  #   return @instance
+  # end
 end
 
 # rps = RPS.new(guess: "Rock")
 # p rps.computer_guess
 # p rps.winner_is
+p srand 1
+p rand 500

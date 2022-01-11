@@ -20,3 +20,4 @@ describe RPS do
         expect(rps.winner_is).to eq('Tie')
       end
     end
+

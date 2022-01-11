@@ -13,13 +13,14 @@ class Rpschallenge < Sinatra::Base
   end
 
   post '/names' do
+    p params
     session[:player] = params[:player]
-    redirect '/player'
+    redirect '/play'
   end
   
   get '/player' do
     @player = session[:player]
-    erb :player
+    erb :play
   end
 
   get '/result' do
